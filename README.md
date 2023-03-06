@@ -81,3 +81,11 @@ venv\Scripts\activate.bat
 5.	https://api.animeinfo.com/v1/anime/characters/{name}
 
 6.	https://api.animeinfo.com/v1/anime/{genre}
+
+7.	https://api.animeinfo.com/v1/anime/rating
+
+8.	https://api.animeinfo.com/v1/anime/social-media/{trailer}{img-poster}
+
+9.	https://api.animeinfo.com/v1/anime/status/{start-date}{end-date}
+
+10.	https://api.animeinfo.com/v1/anime/autor/{mangaka}{status-mangaka}
