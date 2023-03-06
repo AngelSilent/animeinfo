@@ -67,3 +67,17 @@ venv\Scripts\activate.bat
     flask --app main run
 
     pip list
+
+## End poins API
+
+1.	https://api.animeinfo.com/v1/anime/{anime-id}
+
+2.	https://api.animeinfo.com/v1/anime/ranking
+
+3.	https://api.animeinfo.com/v1/anime/season/{year}/{season}
+
+4.	https://api.animeinfo.com/v1/anime/search/{title}
+
+5.	https://api.animeinfo.com/v1/anime/characters/{name}
+
+6.	https://api.animeinfo.com/v1/anime/{genre}
