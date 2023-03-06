@@ -1,6 +1,5 @@
 # Animeinfo
 
-
 ## Objetivo
 
 Que y porque estamos haciendo esto?
@@ -45,3 +44,19 @@ Cubre los cambios principales:
 - Cuales son las nuevas funciones que vas a escribir? - Porque necesitas nuevos componentes? - Hay código que puede ser reusable?
 
 No elabores minuciosamente la implementación.
+
+## Instalación
+
+pip install virtualenv
+
+python -m venv venv
+
+venv\Scripts\activate.bat
+
+    pip install mysql-connector-python
+
+    pip install flask
+
+    flask --app main run
+
+    pip list
