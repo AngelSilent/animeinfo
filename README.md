@@ -84,8 +84,8 @@ venv\Scripts\activate.bat
 
 7.	https://api.animeinfo.com/v1/anime/rating
 
-8.	https://api.animeinfo.com/v1/anime/social-media/{trailer}{img-poster}
+8.	https://api.animeinfo.com/v1/anime/recommendations/{anime-id}
 
 9.	https://api.animeinfo.com/v1/anime/status/{start-date}{end-date}
 
-10.	https://api.animeinfo.com/v1/anime/autor/{mangaka}{status-mangaka}
+10.	https://api.animeinfo.com/v1/anime/autor/{mangaka}
