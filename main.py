@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import mysql.connector
+import json
 from mysql.connector import Error
 from flask import Flask
 app = Flask(__name__)
@@ -15,11 +16,13 @@ def adios():
     return "<center><h2>Hola</h2><marquee>Hola</marquee></center>"
 
 
-@app.route("/anime")
+@app.route("/about")
 def anime():
-    return {
-        "title": "Dragon ball supa"
-    }
+    with open("aboutl.json", "r") as data:
+        about = json.load(data)
+    
+    return about;
+
 
 # try:
 #     connection = mysql.connector.connect(host='localhost',
