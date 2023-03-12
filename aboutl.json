@@ -3,15 +3,25 @@
   "about": "AnimeInfo es una API para la consulta de información de Anime",
   "url": "animeinfo.com/api",
   "price": "Free",
-  "endoins": [
+  "authors": ["César del Angel, Zack Vadhir"],
+  "endpoints": [
     {
-      "url": "/anime",
-      "count": 1
+      "url": "/anime/{anime-id: number}",
+      "count": 1,
+      "type": "GET"
     },
 
     {
-      "url": "/bye",
-      "count": 1
+      "url": "/anime/all",
+      "count": "many",
+      "type": "GET"
+    },
+
+    {
+      "url": "/about",
+      "count": 1,
+      "type": "GET"
     }
+    
   ]
 }
