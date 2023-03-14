@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'password'
+app.config['MYSQL_PASSWORD'] = 'password1'
 app.config['MYSQL_DB'] = 'anime'
 
 mysql = MySQL(app)
@@ -28,6 +28,8 @@ def search():
         cur = mysql.connection.cursor()
         cur.execute("""SELECT * FROM animes WHERE id = %s""", (idAnime,))
         dataAnime = cur.fetchone()
+        if dataAnime is None:
+            return jsonify({"error": "Anime not found"})
         anime = {
             "id": dataAnime[0],
             "title": dataAnime[1],
