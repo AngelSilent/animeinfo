@@ -16,7 +16,8 @@ mysql = MySQL(app)
 
 @app.route("/")
 def main():
-    return jsonify({"title": "animeinfo API"})
+    with open("aboutl.json", "r") as data:
+        return jsonify(json.load(data))
 
 @app.route("/anime", methods=['GET'])
 def search():
