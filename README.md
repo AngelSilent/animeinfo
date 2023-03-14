@@ -70,6 +70,7 @@ venv\Scripts\activate.bat
     pip list
 
 ## End poins API
+0.	https://api.animeinfo.com/v1/anime/all
 
 1.	https://api.animeinfo.com/v1/anime/{anime-id}
 
